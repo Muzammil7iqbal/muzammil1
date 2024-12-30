@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Destinations</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0a3d9b, #4f8bc3);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin: 40px 0;
+        }
+        section h2 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .destination {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .destination:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .destination h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .destination p {
+            font-size: 1.2em;
+            color: #666;
+            text-align: center;
+        }
+        .destination img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            font-size: 1em;
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .destination {
+                padding: 20px;
+            }
+            .destination img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Popular Destinations</h2>
+
+            <div class="destination">
+                <img src="https://images3.alphacoders.com/114/114165.jpg" alt="Paris, France">
+                <h3>Paris, France</h3>
+                <p>The city of love and lights, Paris offers iconic landmarks like the Eiffel Tower and world-class cuisine. Wander through its charming streets, admire art in the Louvre, and enjoy a scenic cruise along the Seine River. Whether you're sipping coffee at a sidewalk café or exploring Montmartre, Paris is sure to captivate you.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/high-angle-view-of-tokyo-skyline-at-dusk-japan-royalty-free-image-1664309926.jpg" alt="Tokyo, Japan">
+                <h3>Tokyo, Japan</h3>
+                <p>A vibrant blend of traditional culture and futuristic technology, Tokyo is a must-visit for all travelers. Visit ancient shrines and temples, shop in bustling districts like Shibuya, and enjoy sushi at its finest. Tokyo’s blend of old and new, east and west, makes it a city of endless discovery.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://www.civitatis.com/blog/wp-content/uploads/2023/03/miradores-nueva-york.jpg" alt="New York City, USA">
+                <h3>New York City, USA</h3>
+                <p>The Big Apple is known for its diverse culture, bustling streets, and famous landmarks like Times Square and the Statue of Liberty. From Broadway shows to walking through Central Park, NYC offers something for everyone. Experience the city that never sleeps and make memories that last a lifetime.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://wallpapercat.com/w/full/0/5/4/295117-1920x1200-desktop-hd-sydney-background-photo.jpg" alt="Sydney, Australia">
+                <h3>Sydney, Australia</h3>
+                <p>With its iconic Opera House and Harbour Bridge, Sydney is a vibrant coastal city full of stunning beaches, amazing wildlife, and delicious food. Whether you're surfing at Bondi Beach or exploring the Royal Botanic Garden, Sydney is the perfect destination for sun-seekers and nature lovers alike.</p>
+            </div>
+
+            <div class="destination">
+                <img src="https://www.peru.travel/Contenido/Noticia/Imagen/en/2052/1.0/Principal/circuits_mapi_Desktop.jpg" alt="Machu Picchu, Peru">
+                <h3>Machu Picchu, Peru</h3>
+                <p>A UNESCO World Heritage Site, Machu Picchu is a mysterious and breathtaking Incan citadel nestled in the Andes Mountains. Hike the famous Inca Trail or take the scenic train ride to reach this ancient wonder, and marvel at the incredible views and fascinating history of this lost city.</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
